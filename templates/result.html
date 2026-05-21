@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <div class="glass-card p-4 text-white text-center">
+        <h2>Diagnosis Result</h2>
+        <div class="alert {% if result == 'Malin' %}alert-danger{% else %}alert-success{% endif %} mt-4 bg-opacity-75">
+            <h4><i class="fas fa-{{ 'skull-crossbones' if result=='Malin' else 'smile' }}"></i> {{ result }}</h4>
+            <p>Confidence: <strong>{{ prob }}%</strong></p>
+        </div>
+        <img src="{{ img_url }}" class="img-fluid rounded shadow-lg mb-3" style="max-width: 300px;">
+        <br>
+        <a href="/dashboard" class="btn btn-custom mt-3"><i class="fas fa-home"></i> Back to Dashboard</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <div class="glass-card p-4 text-white">
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+            <h2><i class="fas fa-list-alt"></i> Patient History</h2>
+            <input type="text" id="searchInput" class="form-control w-auto bg-transparent text-white border-light" placeholder="Search...">
+        </div>
+        <div class="table-responsive mt-3">
+            <table class="table table-custom table-hover" id="patientsTable" style="color: white;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Result</th>
+                        <th>Confidence</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for p in patients %}
+                    <tr>
+                        <td>{{ p.name }}</td>
+                        <td>{{ p.age }}</td>
+                        <!-- Force inline colors for result -->
+                        <td style="{% if p.result == 'Malin' %}color: #ff6b6b;{% else %}color: #8bc34a;{% endif %} font-weight: bold;">
+                            {{ p.result }}
+                        </td>
+                        <td>
+                            {% if p.result == 'Malin' %}
+                                {{ (p.probability * 100)|round(1) }}%
+                            {% else %}
+                                {{ ((1 - p.probability) * 100)|round(1) }}%
+                            {% endif %}
+                        </td>
+                        <td>{{ p.created_at.strftime('%d/%m/%Y %H:%M') }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <a href="/dashboard" class="btn btn-custom mt-3"><i class="fas fa-arrow-left"></i> Back</a>
+    </div>
+</div>
+
+<!-- Optional: Remove modal if unused -->
+{% endblock %}
