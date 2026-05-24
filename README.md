@@ -1,7 +1,7 @@
 # Skin Cancer AI Prediction App
 
 A web-based application for automated skin cancer classification using deep learning. The app allows medical professionals to upload dermatoscopic images of skin lesions and receive AI-powered predictions classifying them as **Benign** or **Malignant**, along with a confidence score.
-
+![image alt](https://raw.githubusercontent.com/rihab-el-ayeb/Skincancer_app/refs/heads/main/home_page.png)
 ## Features
 
 - **AI-Powered Diagnosis**: Uses a fine-tuned VGG16 Convolutional Neural Network to classify skin lesions.
@@ -112,9 +112,9 @@ The app will be available at `http://localhost:5000`
 
 ## Usage Guide
 
-1. **Login** using the default admin credentials.(path/to/login_page.png)
-2. **Dashboard** shows total patients and malignant case statistics.(path/to/dashboard.png)
-3. Click **New Analysis** to upload a patient's lesion image.(path/to/analysis_page.png)
+1. **Login** using the default admin credentials.
+2. **Dashboard** shows total patients and malignant case statistics.
+3. Click **New Analysis** to upload a patient's lesion image.
 4. Fill in patient name and age, then select an image file (PNG, JPG, JPEG, GIF).
 5. View the **Diagnosis Result** showing:
    - Classification: *Bénin* (Benign) or *Malin* (Malignant)
