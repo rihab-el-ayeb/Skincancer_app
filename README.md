@@ -112,16 +112,15 @@ The app will be available at `http://localhost:5000`
 
 ## Usage Guide
 
-1. **Login** using the default admin credentials.
-2. **Dashboard** shows total patients and malignant case statistics.
-3. Click **New Analysis** to upload a patient's lesion image.
-4. Fill in patient name and age, then select an image file (PNG, JPG, JPEG, GIF).
-5. View the **Diagnosis Result** showing:
+1. **Login** using the default admin credentials.![image alt](https://github.com/rihab-el-ayeb/Skincancer_app/blob/main/login_page.png?raw=true)
+3. **Dashboard** shows total patients and malignant case statistics.![image alt](https://raw.githubusercontent.com/rihab-el-ayeb/Skincancer_app/refs/heads/main/home_page.png)
+4. Click **New Analysis** to upload a patient's lesion image.![image alt](https://raw.githubusercontent.com/rihab-el-ayeb/Skincancer_app/refs/heads/main/analysis_page.png)
+5. Fill in patient name and age, then select an image file (PNG, JPG, JPEG, GIF).
+6. View the **Diagnosis Result** showing:
    - Classification: *Bénin* (Benign) or *Malin* (Malignant)
    - Confidence percentage
    
-6. Access **Patient History** to view, search, and review all past diagnoses.(path/to/dashboard.png)
-
+7. Access **Patient History** to view, search, and review all past diagnoses.![image alt](https://github.com/rihab-el-ayeb/Skincancer_app/blob/main/dashboard.png?raw=true)
 ## Model Details
 
 - **Architecture**: VGG16 (Visual Geometry Group 16-layer)
