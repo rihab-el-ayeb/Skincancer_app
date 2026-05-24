@@ -112,15 +112,15 @@ The app will be available at `http://localhost:5000`
 
 ## Usage Guide
 
-1. **Login** using the default admin credentials.
-2. **Dashboard** shows total patients and malignant case statistics.
-3. Click **New Analysis** to upload a patient's lesion image.
+1. **Login** using the default admin credentials.(path/to/login_page.png)
+2. **Dashboard** shows total patients and malignant case statistics.(path/to/dashboard.png)
+3. Click **New Analysis** to upload a patient's lesion image.(path/to/analysis_page.png)
 4. Fill in patient name and age, then select an image file (PNG, JPG, JPEG, GIF).
 5. View the **Diagnosis Result** showing:
    - Classification: *Bénin* (Benign) or *Malin* (Malignant)
    - Confidence percentage
-   - Uploaded image preview
-6. Access **Patient History** to view, search, and review all past diagnoses.
+   
+6. Access **Patient History** to view, search, and review all past diagnoses.(path/to/dashboard.png)
 
 ## Model Details
 
